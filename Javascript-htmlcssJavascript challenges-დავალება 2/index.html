@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1
+        let numOne = 5;
+        let numTwo = numOne;
+        console.log(numTwo);
+
+        // 2
+        // რა განსხვავება არის const და let ტიპებს შორის?
+        document.write('const  არის მუდმივი ცვლადი, რომელსაც ერთხელ რომ მივანიჭებთ მნიშვნელობას, მისი შეცვლა აღარ შეგვიძლია. let–ის შემთხვევაში კი შეგვიძლია ცვლადის მნიშვნელობა შევცვალოთ' + "<br>" + "<br>")
+
+        // 3
+        // const numOne = 5;
+        // numOne = 10; ;
+        // console.log(numOne);
+        document.write('რადგან const ცვლადი გვაქვს გამოყენებული, numOne-ის მნიშვნელობას ვეღარ შევცვლით. const- უნდა გამოვიყენოთ იმ შემთხვევაში, როდესაც ცვლადის მნიშვნელობა არ იცვლება, ხოლო თუ გვინდა ცვლადს მნიშვნელობა შევუცვალოთ –გამოვიყენოთ let ცვლადი' + "<br>" + "<br>")
+
+
+        // 4
+        // var const = 42;
+        document.write('const არის keyword–ი ჯავასკრიპტში, ამ სახელს ვერ გამოვიყენებთ ცვლადის იდენტიფიკატორად, ანიტომ const უნდა შევცვალოთ სხვა სახელით' + "<br>" + "<br>")
+        var age = 42;
+
+
+        // 5
+        var name = "Alice";
+        var greeting = `Hello, ${name}!`;
+        console.log(greeting);
+
+
+        // 6
+        var myFunction = (function() {
+            var message = "Hello, world!";
+            return message;
+        })();
+        console.log(myFunction);
+
+
+        // 7
+        function func() {
+        return 'hello';
+        }
+        const result = func(); 
+        console.log(result + " " + "world");
+
+
+
+    </script>
+</body>
+</html>
